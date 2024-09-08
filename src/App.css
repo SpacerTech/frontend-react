@@ -1,0 +1,17 @@
+/* App.css veya ilgili CSS dosyası */
+.app-container {
+  display: flex;
+  flex-direction: column; /* veya row, bileşenlerin hizalanmasına göre */
+  height: 100vh; /* Container'ın tüm yüksekliği kaplamasını sağlar */
+}
+
+.App {
+  padding: 20px;
+}
+
+.chatbox {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
