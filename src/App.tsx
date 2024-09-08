@@ -4,8 +4,7 @@ import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-r
 import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import React, { FC, ReactNode, useEffect, useMemo, useState } from 'react';
 import { clusterApiUrl, Connection, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import { Chatbox } from './Chatbox';
- // İsimli dışa aktarımla içe aktar
+import Home from './screens/Home';
 
 require('./App.css');
 require('@solana/wallet-adapter-react-ui/styles.css');
@@ -17,8 +16,9 @@ const App: FC = () => {
         <Context>
             <div className="app-container">
                 <Content setWalletState={setWalletState} />
-                <Chatbox walletState={walletState} />
-            </div>
+                
+                <Home walletState={walletState}/>
+     </div>
         </Context>
     );
 };
